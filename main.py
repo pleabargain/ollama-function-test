@@ -89,8 +89,15 @@ def convert_url_to_markdown(url, selected_model):
 
 def get_source_code():
     try:
-        with open(__file__, 'r') as f:
+        with open(__file__, 'r', encoding='utf-8') as f:
             return f.read()
+    except UnicodeDecodeError:
+        # Fallback to a different encoding if utf-8 fails
+        try:
+            with open(__file__, 'r', encoding='latin-1') as f:
+                return f.read()
+        except Exception as e:
+            return f"Error reading source code with fallback encoding: {str(e)}"
     except Exception as e:
         return f"Error reading source code: {str(e)}"
 
