@@ -165,6 +165,9 @@ def main():
         st.markdown("""
         # Website to Markdown Converter - Help Guide
 
+        ## Source Code
+        The complete source code for this project is available on GitHub at [pleabargain/ollama-function-test](https://github.com/pleabargain/ollama-function-test)
+
         ## Important Note
         ⚠️ This application runs locally and requires Ollama to be installed and running on your machine. It is not a cloud service.
 
@@ -202,7 +205,7 @@ def main():
         2. **Install a Language Model**
            - Open terminal
            - Run: `ollama pull mistral` (recommended)
-           - Or choose another model: `ollama pull llama2`
+           - Or choose another model: `ollama pull llama2:3.2`
 
         3. **Start Ollama Service**
            - Ensure Ollama is running in the background

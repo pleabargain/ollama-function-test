@@ -41,8 +41,8 @@ This is a local application that requires Ollama to be installed and running on 
 
 1. Clone this repository:
    ```bash
-   git clone [your-repository-url]
-   cd website-to-markdown-converter
+   git clone https://github.com/pleabargain/ollama-function-test
+   cd ollama-function-test
    ```
 
 2. Install dependencies:
@@ -53,6 +53,8 @@ This is a local application that requires Ollama to be installed and running on 
 3. Install an Ollama model locally:
    ```bash
    ollama pull mistral  # recommended model
+   # or alternatively
+   ollama pull llama2:3.2
    ```
 
 ## Usage
